@@ -1,0 +1,53 @@
+//http://practice.geeksforgeeks.org/problems/equilibrium-point/0/?ref=self
+#include <iostream>
+using namespace std;
+
+int eqpoint(int size, int arr[]){
+//split array in half, add and subtract until eq is found or
+if(size == 0) return -1;
+if(size == 1) return 1;
+
+int mp = size/2;
+int pos = size/2;
+int left = 0;
+int right = 0;
+bool lc = false;
+bool rc = false;
+
+for(int i = 0; i < mp; i++){
+left += arr[i];
+}
+for(int j = mp+1; j < size; j++){ //mp+1 to start at mp
+right += arr[j];
+}
+
+while(true){ //fix
+if(left == right) return pos+1;
+if(left > right){ // adjust to right, counter on
+if(rc) return -1;
+lc = true;
+left -= arr[pos-1];
+right += arr[pos];
+pos--;
+}
+else{ // adjust to right, counter on
+if(lc) return -1;
+rc = true;
+left += arr[pos];
+right -= arr[pos+1];
+pos++;
+}
+}
+}
+
+int main(){
+int runs, size;
+cin >> runs;
+while(runs--){
+cin >> size;
+int arr[size];
+for(int i = 0; i<size; i++) cin >>arr[i];
+cout << eqpoint(size, arr) << endl;
+}
+
+}

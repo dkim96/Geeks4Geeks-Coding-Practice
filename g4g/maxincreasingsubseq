@@ -1,0 +1,46 @@
+//http://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence/0/?ref=self
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int findSum(vector<int> arr)
+{
+int sum = 0;
+for (int i: arr)
+sum += i;
+return sum;
+}
+
+int maxsub(int size, int arr[]){
+vector<vector<int>> N(size);
+
+N[0].push_back(arr[0]);
+
+for(int i = 1; i < size; i++){
+for(int j = 0; j < i; j++){
+if(arr[i] > arr[j] && findSum(N[i]) < findSum(N[j])) N[i] = N[j];
+}
+N[i].push_back(arr[i]);
+}
+
+int largest = 0;
+
+for(int i = 0; i < size; i++){
+if(largest < findSum(N[i])) largest = findSum(N[i]);
+}
+return largest;
+
+}
+
+int main() {
+int iter, size;
+cin >> iter;
+while(iter--){
+cin >> size;
+int arr[size];
+for(int i = 0; i < size; i++){
+cin >> arr[i];
+}
+cout << maxsub(size, arr) << endl;
+}
+}

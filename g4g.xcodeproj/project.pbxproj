@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7253CEE1F72043900A263B2 /* Kadane's Algo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7253CED1F72043900A263B2 /* Kadane's Algo.cpp */; };
+		E7253CF01F743C2800A263B2 /* longest inc subseq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7253CEF1F743C2800A263B2 /* longest inc subseq.cpp */; };
+		E749C1CB1F3A10C400F87E31 /* searchinrotatedarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E749C1C91F3A10C400F87E31 /* searchinrotatedarray.cpp */; };
 		E756ED471E8ACFA4003C23B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E756ED461E8ACFA4003C23B8 /* main.cpp */; };
+		E7E3BEC51F01D0B400427557 /* other.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7E3BEC31F01D0B300427557 /* other.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E7253CED1F72043900A263B2 /* Kadane's Algo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Kadane's Algo.cpp"; sourceTree = "<group>"; };
+		E7253CEF1F743C2800A263B2 /* longest inc subseq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "longest inc subseq.cpp"; sourceTree = "<group>"; };
+		E7253CF11F747B8E00A263B2 /* sort012 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sort012; sourceTree = "<group>"; };
+		E7253CF21F74802300A263B2 /* eqpoint */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eqpoint; sourceTree = "<group>"; };
+		E7253CF31F758AFA00A263B2 /* maxincreasingsubseq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = maxincreasingsubseq; sourceTree = "<group>"; };
+		E749C1C91F3A10C400F87E31 /* searchinrotatedarray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = searchinrotatedarray.cpp; sourceTree = "<group>"; };
+		E749C1CA1F3A10C400F87E31 /* searchinrotatedarray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = searchinrotatedarray.hpp; sourceTree = "<group>"; };
 		E756ED431E8ACFA4003C23B8 /* g4g */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g4g; sourceTree = BUILT_PRODUCTS_DIR; };
 		E756ED461E8ACFA4003C23B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E7E3BEC31F01D0B300427557 /* other.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = other.cpp; sourceTree = "<group>"; };
+		E7E3BEC41F01D0B300427557 /* other.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = other.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,15 @@
 			isa = PBXGroup;
 			children = (
 				E756ED461E8ACFA4003C23B8 /* main.cpp */,
+				E7253CF31F758AFA00A263B2 /* maxincreasingsubseq */,
+				E7253CF21F74802300A263B2 /* eqpoint */,
+				E7253CF11F747B8E00A263B2 /* sort012 */,
+				E7E3BEC31F01D0B300427557 /* other.cpp */,
+				E749C1C91F3A10C400F87E31 /* searchinrotatedarray.cpp */,
+				E749C1CA1F3A10C400F87E31 /* searchinrotatedarray.hpp */,
+				E7E3BEC41F01D0B300427557 /* other.hpp */,
+				E7253CED1F72043900A263B2 /* Kadane's Algo.cpp */,
+				E7253CEF1F743C2800A263B2 /* longest inc subseq.cpp */,
 			);
 			path = g4g;
 			sourceTree = "<group>";
@@ -120,7 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E3BEC51F01D0B400427557 /* other.cpp in Sources */,
 				E756ED471E8ACFA4003C23B8 /* main.cpp in Sources */,
+				E749C1CB1F3A10C400F87E31 /* searchinrotatedarray.cpp in Sources */,
+				E7253CF01F743C2800A263B2 /* longest inc subseq.cpp in Sources */,
+				E7253CEE1F72043900A263B2 /* Kadane's Algo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +275,7 @@
 				E756ED4C1E8ACFA4003C23B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
